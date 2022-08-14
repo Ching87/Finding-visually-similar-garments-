@@ -10,7 +10,7 @@ Given a database of fashion garment images, the goal is to find 10 visually simi
 
 
 ### Approach:
-Here, i have used the pretrained weights of MobileNetV2 architecture in order to extract the salient image features. It is lighter and faster. I have also applied GlobalAverage Pooling on the output layer of the model in order to reduce the output shape. For every image feature, I have calculated the euclidean distance with each other and store the distances in a 2D Numpy array (in the form of a symmetric matrix). 
+Here, i have used the pretrained weights of MobileNetV2 architecture in order to extract the salient image features. It is lighter and faster. I have also applied GlobalAverage Pooling on the output layer of the model in order to reduce the output shape. For every image feature, I have calculated the euclidean distance with each other and store the distances in a 2D Numpy array (in the form of a symmetric matrix). The distance matrix is then saved in a compressed .npz file.
 
 
 ### Usage
